@@ -11,7 +11,7 @@ plt.rcParams["font.family"] = ["SimHei", "WenQuanYi Micro Hei", "Heiti TC"]
 plt.rcParams["axes.unicode_minus"] = False
 
 st.set_page_config(
-    page_title="医疗数据分析",
+    page_title="费用预估demo",
     page_icon=":bar_chart:",
     layout="wide"
 )
@@ -212,7 +212,7 @@ with st.sidebar:
 # 4. 主页面 - 统计分析
 # --------------------------
 if st.session_state.merged_df is not None and st.session_state.insurance_config:
-    st.header("统计分析")
+    st.header("费用预估demo")
     fields = st.session_state.fields
     case_key = st.session_state.case_key
     merged_df = st.session_state.merged_df
@@ -277,7 +277,7 @@ if st.session_state.merged_df is not None and st.session_state.insurance_config:
                 query_df = query_df[~has_surgery_condition]
 
         if gender != "全部":
-            gender_field = "性别"
+            gender_field = "性别描述"
             if gender_field in query_df.columns:
                 query_df = query_df[query_df[gender_field] == gender]
             else:
@@ -288,7 +288,7 @@ if st.session_state.merged_df is not None and st.session_state.insurance_config:
             if not other_diagnosis_fields:
                 st.warning("未找到包含'其他诊断名称'的字段，其他诊断筛选无效")
             else:
-                st.info(f"已识别 {len(other_diagnosis_fields)} 个其他诊断字段，将进行模糊匹配")
+                #st.info(f"已识别 {len(other_diagnosis_fields)} 个其他诊断字段，将进行模糊匹配")
                 other_diagnosis_keywords = [kw.strip() for kw in other_diagnosis.split() if kw.strip()]
                 if other_diagnosis_keywords:
                     other_diag_conditions = pd.Series(False, index=query_df.index)
@@ -304,7 +304,7 @@ if st.session_state.merged_df is not None and st.session_state.insurance_config:
 
         # 结果统计
         unique_cases = query_df[case_key].nunique()
-        st.success(f"找到 {unique_cases} 例患者（去重后）")
+        #st.success(f"找到 {unique_cases} 例患者（去重后）")
 
         if unique_cases == 0:
             st.warning("没有找到符合条件的数据")
