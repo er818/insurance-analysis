@@ -227,7 +227,7 @@ if st.session_state.merged_df is not None and st.session_state.insurance_config:
         surgeries_input = st.text_input("手术关键词（多个用空格分隔，使用AND关系）", value="")
         has_surgery = st.selectbox("是否有手术", ["全部", "是", "否"], index=0)
     with col2:
-        other_diagnosis = st.text_input("其他诊断（多个关键词用空格分隔）", value="")
+        other_diagnosis = st.text_input("其他诊断（多个用空格分隔，使用AND关系）", value="")
 
     if st.button("执行查询"):
         # 筛选逻辑
