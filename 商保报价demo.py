@@ -7,7 +7,7 @@ import seaborn as sns
 # --------------------------
 # 1. 基础配置与缓存设置
 # --------------------------
-plt.rcParams["font.family"] = ["SimHei", "WenQuanYi Micro Hei", "Heiti TC"]
+plt.rcParams["font.family"] = ["SimHei", "WenQuanYi Micro Hei", "Heiti TC","simsun", "simhei"]
 plt.rcParams["axes.unicode_minus"] = False
 
 st.set_page_config(
@@ -398,7 +398,9 @@ if st.session_state.merged_df is not None and st.session_state.insurance_config:
                     fig, ax = plt.subplots(figsize=(8, 4))
                     sns.barplot(x='例均金额', y='项目名称', data=insurance_stats.head(5).reset_index())
                     ax.set_yticklabels(
-                        [f"{i + 1}. {name}" for i, name in enumerate(insurance_stats.head(5)['项目名称'])])
+                        [f"{i + 1}. {name}" for i, name in enumerate(insurance_stats.head(5)['项目名称'])],
+                        fontproperties="SimHei"
+                    )
                     st.pyplot(fig)
                 else:
                     st.info("没有找到医保相关费用数据")
