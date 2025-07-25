@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f4a7c604-ca51-4d00-b035-d3abf076806d" name="更改" comment="商保报价" />
+    <list default="true" id="f4a7c604-ca51-4d00-b035-d3abf076806d" name="更改" comment="商保报价">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/商保报价demo.py" beforeDir="false" afterPath="$PROJECT_DIR$/商保报价demo.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
