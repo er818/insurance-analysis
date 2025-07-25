@@ -3,11 +3,22 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
+import matplotlib.font_manager as fm
+import os
 
 # --------------------------
 # 1. 基础配置与缓存设置
 # --------------------------
-plt.rcParams["font.family"] = ["SimHei", "WenQuanYi Micro Hei", "Heiti TC","simsun", "simhei"]
+# 加载本地字体（适用于Cloud）
+font_path = os.path.join(os.getcwd(), "fonts", "Simhei.ttf")  # 替换为你的字体文件路径
+if os.path.exists(font_path):
+    # 加载字体
+    my_font = fm.FontProperties(fname=font_path)
+    # 设置全局字体
+    plt.rcParams["font.family"] = my_font.get_name()
+else:
+    #  fallback方案：使用默认字体列表
+    plt.rcParams["font.family"] = ["SimHei", "WenQuanYi Micro Hei", "Heiti TC", "simsun", "simhei"]
 plt.rcParams["axes.unicode_minus"] = False
 
 st.set_page_config(
