@@ -17,8 +17,8 @@ if os.path.exists(font_path):
     # 设置全局字体
     plt.rcParams["font.family"] = my_font.get_name()
 else:
-    #  fallback方案：使用默认字体列表
-    plt.rcParams["font.family"] = ["SimHei", "WenQuanYi Micro Hei", "Heiti TC", "simsun", "simhei"]
+    # fallback方案：使用默认字体列表
+    plt.rcParams["font.family"] = ["SimHei", "WenQuanYi Micro Hei", "Heiti TC"]
 plt.rcParams["axes.unicode_minus"] = False
 
 st.set_page_config(
@@ -394,7 +394,14 @@ if st.session_state.merged_df is not None and st.session_state.insurance_config:
                 if len(all_stats) > 0:
                     fig, ax = plt.subplots(figsize=(8, 4))
                     sns.barplot(x='例均金额', y='项目名称', data=all_stats.head(5).reset_index())
-                    ax.set_yticklabels([f"{i + 1}. {name}" for i, name in enumerate(all_stats.head(5)['项目名称'])])
+                    # 修改Y轴标签字体，添加fontname参数
+                    ax.set_yticklabels(
+                        [f"{i + 1}. {name}" for i, name in enumerate(all_stats.head(5)['项目名称'])],
+                        fontname='SimHei'
+                    )
+                    # 添加X轴和标题的字体设置
+                    ax.set_xlabel('例均金额', fontname='SimHei')
+                    ax.set_title('项目例均金额TOP5', fontname='SimHei')
                     st.pyplot(fig)
 
             with col_insurance:
@@ -408,10 +415,14 @@ if st.session_state.merged_df is not None and st.session_state.insurance_config:
                     st.dataframe(styled_insurance)
                     fig, ax = plt.subplots(figsize=(8, 4))
                     sns.barplot(x='例均金额', y='项目名称', data=insurance_stats.head(5).reset_index())
+                    # 修改Y轴标签字体，添加fontname参数
                     ax.set_yticklabels(
                         [f"{i + 1}. {name}" for i, name in enumerate(insurance_stats.head(5)['项目名称'])],
-                        fontproperties="SimHei"
+                        fontname='SimHei'
                     )
+                    # 添加X轴和标题的字体设置
+                    ax.set_xlabel('例均金额', fontname='SimHei')
+                    ax.set_title('医保项目例均金额TOP5', fontname='SimHei')
                     st.pyplot(fig)
                 else:
                     st.info("没有找到医保相关费用数据")
@@ -427,8 +438,14 @@ if st.session_state.merged_df is not None and st.session_state.insurance_config:
                     st.dataframe(styled_commercial)
                     fig, ax = plt.subplots(figsize=(8, 4))
                     sns.barplot(x='例均金额', y='项目名称', data=commercial_stats.head(5).reset_index())
+                    # 修改Y轴标签字体，添加fontname参数
                     ax.set_yticklabels(
-                        [f"{i + 1}. {name}" for i, name in enumerate(commercial_stats.head(5)['项目名称'])])
+                        [f"{i + 1}. {name}" for i, name in enumerate(commercial_stats.head(5)['项目名称'])],
+                        fontname='SimHei'
+                    )
+                    # 添加X轴和标题的字体设置
+                    ax.set_xlabel('例均金额', fontname='SimHei')
+                    ax.set_title('商保项目例均金额TOP5', fontname='SimHei')
                     st.pyplot(fig)
                 else:
                     st.info("没有找到商保相关费用数据")

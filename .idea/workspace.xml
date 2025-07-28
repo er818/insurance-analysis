@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f4a7c604-ca51-4d00-b035-d3abf076806d" name="更改" comment="Merge branch 'master' of https://github.com/er818/insurance-analysis&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;requirements.txt" />
+    <list default="true" id="f4a7c604-ca51-4d00-b035-d3abf076806d" name="更改" comment="Merge branch 'master' of https://github.com/er818/insurance-analysis&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;requirements.txt">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/商保报价.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/商保报价.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/商保报价demo.py" beforeDir="false" afterPath="$PROJECT_DIR$/商保报价demo.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -101,6 +105,7 @@
       <option name="presentableId" value="Default" />
       <updated>1753419518456</updated>
       <workItem from="1753419519856" duration="4761000" />
+      <workItem from="1753663153693" duration="388000" />
     </task>
     <task id="LOCAL-00001" summary="商保报价">
       <option name="closed" value="true" />
@@ -222,7 +227,55 @@
       <option name="project" value="LOCAL" />
       <updated>1753428645617</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Merge branch 'master' of https://github.com/er818/insurance-analysis&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;requirements.txt">
+      <option name="closed" value="true" />
+      <created>1753429417985</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1753429417985</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Merge branch 'master' of https://github.com/er818/insurance-analysis&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;requirements.txt">
+      <option name="closed" value="true" />
+      <created>1753429616657</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1753429616657</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Merge branch 'master' of https://github.com/er818/insurance-analysis&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;requirements.txt">
+      <option name="closed" value="true" />
+      <created>1753429663724</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1753429663724</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Merge branch 'master' of https://github.com/er818/insurance-analysis&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;requirements.txt">
+      <option name="closed" value="true" />
+      <created>1753430563543</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1753430563543</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Merge branch 'master' of https://github.com/er818/insurance-analysis&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;requirements.txt">
+      <option name="closed" value="true" />
+      <created>1753434095938</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1753434095938</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Merge branch 'master' of https://github.com/er818/insurance-analysis&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;requirements.txt">
+      <option name="closed" value="true" />
+      <created>1753436610602</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1753436610602</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -247,6 +300,6 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/$.coverage" NAME="更新环境包 覆盖结果" MODIFIED="1753427507641" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/$main.coverage" NAME="main 覆盖结果" MODIFIED="1753427442034" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/$main.coverage" NAME="main 覆盖结果" MODIFIED="1753437228475" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
